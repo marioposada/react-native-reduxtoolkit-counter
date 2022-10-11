@@ -26,7 +26,7 @@ export default function AppMain() {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => dispatch(reset())}
-          style={styles.buttonRest}
+          style={styles.buttonReset}
         >
           <Text style={styles.textButton}>Reset</Text>
         </TouchableOpacity>
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   buttonAdd: {
     color: colors.primary,
     backgroundColor: colors.secondary,
-    width: 150,
+    width: 100,
     height: 50,
     fontSize: 50,
     alignItems: "center",
@@ -76,7 +76,18 @@ const styles = StyleSheet.create({
   buttonRest: {
     color: colors.primary,
     backgroundColor: colors.primary,
-    width: 150,
+    width: 100,
+    height: 50,
+    fontSize: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 5,
+    borderWidth: 0.4,
+  },
+  buttonReset: {
+    color: colors.primary,
+    backgroundColor: colors.tertiary,
+    width: 100,
     height: 50,
     fontSize: 50,
     alignItems: "center",
