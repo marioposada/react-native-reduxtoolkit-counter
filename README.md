@@ -18,7 +18,7 @@ $ npm start
 $ yarn start
 ```
 # Screenshot
-<h2 align="center"> <img width="300" src="" /> <img width="300" src="" /></h2>
+<h2 align="center"> <img width="300" src="https://github.com/marioposada/assets/blob/main/redux/redux.gif" /> </h2>
                        
                        
 # Developed by 
