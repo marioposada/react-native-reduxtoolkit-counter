@@ -1,31 +1,29 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { colors } from "../constant/theme/colors";
-import { useSelector, useDispatch } from "react-redux";
-import { sumar, restar,reset } from "../store/actions";
+
 
 export default function AppMain() {
-  const state = useSelector((state) => state.contadorReducer);
-  const dispatch = useDispatch();
+
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{state.value}</Text>
+      <Text style={styles.text}>{}</Text>
       <View style={styles.containerButtons}>
         <TouchableOpacity
-          onPress={() => dispatch(sumar())}
+          onPress={() => {}}
           style={styles.buttonAdd}
         >
           <Text style={styles.textButton}>Sumar</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => dispatch(restar())}
+          onPress={() => {}}
           style={styles.buttonRest}
         >
           <Text style={styles.textButton}>Restar</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => dispatch(reset())}
+          onPress={() => {}}
           style={styles.buttonReset}
         >
           <Text style={styles.textButton}>Reset</Text>
