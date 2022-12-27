@@ -2,7 +2,7 @@
 <h1 align="center">  React Native redux implement  </h1>
 
 # Description
-App developed to implement redux.
+App developed to implement reduxtoolkit
 
 ## Build Setup
 
