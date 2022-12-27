@@ -1,29 +1,34 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { colors } from "../constant/theme/colors";
+import {useSelector, useDispatch} from 'react-redux';
+import { increment,decrement, reset } from "../store/slices/counterSlice";
 
 
 export default function AppMain() {
 
+  const count = useSelector(state => state.counter.count);
+  const dispatch = useDispatch();
+
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{}</Text>
+      <Text style={styles.text}>{count}</Text>
       <View style={styles.containerButtons}>
         <TouchableOpacity
-          onPress={() => {}}
+          onPress={() => dispatch(increment())}
           style={styles.buttonAdd}
         >
           <Text style={styles.textButton}>Sumar</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => {}}
+          onPress={() => dispatch(decrement())}
           style={styles.buttonRest}
         >
           <Text style={styles.textButton}>Restar</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => {}}
+          onPress={() => dispatch(reset())}
           style={styles.buttonReset}
         >
           <Text style={styles.textButton}>Reset</Text>
