@@ -8,7 +8,7 @@ App developed to implement reduxtoolkit
 
 ``` bash
 # clone project
-$ git clone git@github.com:marioposada/react-native-redux-implement.git
+$ git clone git@github.com:marioposada/react-native-reduxtoolkit-counter.git
 
 # install dependencies
 $ npm install
